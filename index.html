@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohitha's Multi-Color Mixer with 3D Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Multi-Color Mixer</h1>
+        <div class="sliders">
+            <div class="slider">
+                <label for="red">Red</label>
+                <input type="range" id="red" min="0" max="255" value="0" oninput="mixColors()">
+                <span id="redValue">0</span>
+            </div>
+            <div class="slider">
+                <label for="green">Green</label>
+                <input type="range" id="green" min="0" max="255" value="0" oninput="mixColors()">
+                <span id="greenValue">0</span>
+            </div>
+            <div class="slider">
+                <label for="blue">Blue</label>
+                <input type="range" id="blue" min="0" max="255" value="0" oninput="mixColors()">
+                <span id="blueValue">0</span>
+            </div>
+        </div>
+        <div class="color-display" id="colorDisplay"></div>
+        <div class="color-box" id="colorBox"></div>
+        <div class="color-history" id="colorHistory">
+            <h2>Mixed Colors</h2>
+            <div class="colors" id="colors"></div>
+        </div>
+        <div class="all-colors" id="allColors">
+            <h2>All Possible Colors</h2>
+            <div class="colors" id="colorPalette"></div>
+        </div>
+        <div class="three-d-animation" id="threeDAnimation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
